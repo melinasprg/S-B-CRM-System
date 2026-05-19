@@ -1,0 +1,66 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+:root {
+  --bg: #0b0b0b; /* page background */
+  --muted: #9ca3af; /* muted text */
+  --card: #ffffff; /* card background */
+  --text: #e6e7e8; /* page text */
+  --accent: #000000; /* primary accent */
+  --danger: #ef4444;
+  --warn: #f59e0b;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Keep utility .bg-white as white cards with dark text */
+.bg-white {
+  background-color: var(--card) !important;
+  color: #111827 !important;
+}
+
+/* Card container helper */
+.card { @apply p-4 rounded shadow-sm bg-white; }
+
+/* Buttons */
+.btn-primary {
+  background: var(--card);
+  color: var(--accent);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.btn-muted {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.btn-edit {
+  background: var(--warn);
+  color: white;
+}
+.btn-delete {
+  background: var(--danger);
+  color: white;
+}
+
+/* Inputs on dark background */
+input, textarea, select {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(230,230,230,0.5);
+}
+

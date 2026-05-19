@@ -1,0 +1,14 @@
+{
+  "customers": [
+    { "id": 1, "name": "Alice Smith", "email": "alice@example.com", "phone": "+1 555-0123", "company": "Tech Buyers Inc", "address": "123 Commerce St", "materials": [1] },
+    { "id": 2, "name": "Bob Jones", "email": "bob@example.com", "phone": "+1 555-0456", "company": "Industrial Parts Co", "address": "456 Factory Ave", "materials": [2] }
+  ],
+  "suppliers": [
+    { "id": 1, "name": "Acme Supplies", "contact": "acme@example.com", "phone": "+1 555-0789", "company": "Acme Holdings", "address": "789 Supply Rd", "materials": [1,2] },
+    { "id": 2, "name": "SupplyCo", "contact": "sales@supplyco.com", "phone": "+1 555-0999", "company": "SupplyCo LLC", "address": "321 Distribution Blvd", "materials": [2] }
+  ],
+  "materials": [
+    { "id": 1, "name": "Steel Sheets", "quantity": 120, "price": 15.5, "description": "High-quality steel sheets for construction and fabrication." },
+    { "id": 2, "name": "Copper Wire", "quantity": 300, "price": 8.25, "description": "Flexible copper wire for electrical and grounding applications." }
+  ]
+}
